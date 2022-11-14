@@ -1,5 +1,5 @@
 {
-  "name": "my-marketplace",
+  "name": "aura-exchange",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/react": "^1.0.0-beta.10",
     "@thirdweb-dev/react": "^3",
     "@thirdweb-dev/sdk": "^3",
     "ethers": "^5.6.4",
@@ -24,5 +25,18 @@
   },
   "engines": {
     "node": ">=16.0.0"
-  }
+  },
+  "description": "In this guide, you will learn how to create a marketplace like [OpenSea](https://opensea.io/) on the Goerli Ethereum test network!",
+  "version": "1.0.0",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LordLabz/aura-beta.git"
+  },
+  "author": "Dustin Turska - KronicLabz | LordLabz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LordLabz/aura-beta/issues"
+  },
+  "homepage": "https://github.com/LordLabz/aura-beta#readme"
 }
