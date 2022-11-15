@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 
   // Connect your marketplace smart contract here (replace this address)
   const { contract: marketplace } = useContract(
-    "0x06013cB2aa909B57a5F0Ed7616e92fD736F0D2cB", // Your marketplace contract address here
+    "0x927df33d9662C7d8fbaB0054a1a4D2e7e0b77D0c", // Your marketplace contract address here
     "marketplace"
   );
 
@@ -29,9 +29,7 @@ const Home: NextPage = () => {
         <h1 className={styles.h1}>Aura NFT Exchange</h1>
 
         <hr className={styles.divider} />
-          <ListingCards
-            
-          ></ListingCards>
+        <ListingCards></ListingCards>
 
         <div style={{ marginTop: 32, marginBottom: 32 }}>
           <Link href="/create">
