@@ -20,6 +20,15 @@
   margin-left: 5%;
 }
 
+.rightCenter {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 5%;
+}
+
 .right {
   height: 100%;
   display: flex;
@@ -58,7 +67,7 @@
   min-width: 3rem;
   font-size: 1rem;
   background: #e5e5ea;
-  background-image: linear-gradient(to right, #cc25b3 0%, #418dff 101.52%);
+  background-color: blue;
   color: #fff;
   width: 180px;
   text-align: center;

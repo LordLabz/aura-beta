@@ -29,12 +29,16 @@ const Home: NextPage = () => {
         <h1 className={styles.h1}>Aura NFT Exchange</h1>
 
         <hr className={styles.divider} />
-        <ListingCards></ListingCards>
 
-        <div style={{ marginTop: 32, marginBottom: 32 }}>
+        <div style={{ marginTop: 32, marginBottom: 32, marginRight: 3, padding: 2, }}>
           <Link href="/create">
             <a className={styles.mainButton} style={{ textDecoration: "none" }}>
               Create A Listing
+            </a>
+          </Link>
+          <Link href="/stake">
+            <a className={styles.mainButton} style={{ textDecoration: "none" }}>
+              Stake a NFT
             </a>
           </Link>
         </div>

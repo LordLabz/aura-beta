@@ -31,7 +31,7 @@ const ListingPage: NextPage = () => {
 
   // Initialize the marketplace contract
   const { contract: marketplace } = useContract(
-    "0x06013cB2aa909B57a5F0Ed7616e92fD736F0D2cB", // Your marketplace contract address here
+    "0x927df33d9662C7d8fbaB0054a1a4D2e7e0b77D0c", // Your marketplace contract address here
     "marketplace"
   );
 
@@ -56,7 +56,7 @@ const ListingPage: NextPage = () => {
     try {
       // Ensure user is on the correct network
       if (networkMismatch) {
-        switchNetwork && switchNetwork(ChainId.Goerli);
+        switchNetwork && switchNetwork(ChainId.Mumbai);
         return;
       }
 
@@ -65,7 +65,7 @@ const ListingPage: NextPage = () => {
         await marketplace?.direct.makeOffer(
           listingId, // The listingId of the listing we want to make an offer for
           1, // Quantity = 1
-          NATIVE_TOKENS[ChainId.Goerli].wrapped.address, // Wrapped Ether address on Goerli
+          NATIVE_TOKENS[ChainId.Mumbai].wrapped.address, // Wrapped Ether address on Mumbai
           bidAmount // The offer amount the user entered
         );
       }
@@ -90,7 +90,7 @@ const ListingPage: NextPage = () => {
     try {
       // Ensure user is on the correct network
       if (networkMismatch) {
-        switchNetwork && switchNetwork(ChainId.Goerli);
+        switchNetwork && switchNetwork(ChainId.Mumbai);
         return;
       }
 
@@ -104,7 +104,7 @@ const ListingPage: NextPage = () => {
   }
 
   return (
-    <div className={styles.container} style={{}}>
+    <div className={styles.container}>
       <div className={styles.listingContainer}>
         <div className={styles.leftListing}>
           <MediaRenderer
