@@ -303,7 +303,7 @@
   cursor: pointer;
 }
 
-.listingType:checked + label {
+.listingType:checked+label {
   border: 3px solid transparent;
   border-radius: 20px;
   background: linear-gradient(to right, #262936, #262936),
@@ -521,8 +521,8 @@
   min-width: 3rem;
   font-size: 1rem;
   background: #e5e5ea;
-  background-image: linear-gradient(to left, #cc25b3 0%, #418dff 101.52%);
-  color: #fff;
+  background-color: rgb(230, 231, 126);
+  color: rgb(0, 0, 0);
   width: 180px;
   text-align: center;
   border-radius: 9999px;
@@ -702,10 +702,12 @@
   .nftBoxGrid {
     justify-content: center;
   }
+
   .nftBox {
     width: 90%;
     margin-top: 16px;
   }
+
   .optionSelectBox {
     width: 90%;
     margin-top: 16px;

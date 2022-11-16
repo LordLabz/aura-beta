@@ -7,7 +7,6 @@ import {
   useContract,
 } from "@thirdweb-dev/react";
 import { useRouter } from "next/router";
-import ListingCards from "../components/listings/ListingCards";
 
 const Home: NextPage = () => {
   const router = useRouter();
@@ -30,7 +29,14 @@ const Home: NextPage = () => {
 
         <hr className={styles.divider} />
 
-        <div style={{ marginTop: 32, marginBottom: 32, marginRight: 3, padding: 2, }}>
+        <div
+          style={{
+            marginTop: 32,
+            marginBottom: 32,
+            marginRight: 3,
+            padding: 2,
+          }}
+        >
           <Link href="/create">
             <a className={styles.mainButton} style={{ textDecoration: "none" }}>
               Create A Listing
@@ -39,6 +45,11 @@ const Home: NextPage = () => {
           <Link href="/stake">
             <a className={styles.mainButton} style={{ textDecoration: "none" }}>
               Stake a NFT
+            </a>
+          </Link>
+          <Link href="/ZOEStaking">
+            <a className={styles.mainButton} style={{ textDecoration: "none" }}>
+              Stake $ZOE
             </a>
           </Link>
         </div>

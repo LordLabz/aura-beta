@@ -11,11 +11,11 @@ import type { NextPage } from "next";
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 
-const nftDropContractAddress = "0x64fcc8529dC8839E5559c80b25782947DC0ACd8c";
+const nftDropContractAddress = "0x324fFa106faafeaD99165Cda1490Be403923E4Cf";
 const tokenContractAddress = "0x228e7f2649ce8DEC0917a4d425f49B6771FB0074";
-const stakingContractAddress = "0x534f965034F4B1bA05BCEe0F9b31E11F783C85A7";
+const stakingContractAddress = "0xd2504B03dc3dafdF938AAeA364647Ed2372C13aC";
 
-const Stake: NextPage = () => {
+const ZOEStaking: NextPage = () => {
   // Wallet Connection Hooks
   const address = useAddress();
   const connectWithMetamask = useMetamask();
@@ -200,4 +200,4 @@ const Stake: NextPage = () => {
   );
 };
 
-export default Stake;
+export default ZOEStaking;
