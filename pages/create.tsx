@@ -7,7 +7,6 @@ import {
   ChainId,
   NATIVE_TOKEN_ADDRESS,
   TransactionResult,
-  ZOE_TOKEN_ADDRESS,
 } from "@thirdweb-dev/sdk";
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
