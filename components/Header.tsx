@@ -13,7 +13,7 @@ export default function Header() {
     <div className={styles.header}>
       <div className={styles.left}>
         <div>
-          <Link href="/" passHref role="button">
+          <Link href="/home" passHref role="button">
             <img
               src={`/aura-main.png`}
               alt="Aura Logo"
@@ -22,6 +22,30 @@ export default function Header() {
             />
           </Link>
         </div>
+      </div>
+      <div
+        style={{
+          marginTop: 32,
+          marginBottom: 32,
+          marginRight: 3,
+          padding: 2,
+        }}
+      >
+        <Link href="/create">
+          <a className={styles.menuButton} style={{ textDecoration: "none" }}>
+            NFTs
+          </a>
+        </Link>
+        <Link href="/listings">
+          <a className={styles.menuButton} style={{ textDecoration: "none" }}>
+            Buy
+          </a>
+        </Link>
+        <Link href="/stake">
+          <a className={styles.menuButton} style={{ textDecoration: "none" }}>
+            The Crypt
+          </a>
+        </Link>
       </div>
       <div className={styles.right}>
         {address ? (

@@ -26,8 +26,14 @@
     "components/listings/Card5.js",
     "components/spotlight/App.js",
     "components/spotlight/Card1.js",
-    "components/spotlight/App.js"
-  ],
+    "components/spotlight/App.js",
+    "components/navbar/Layout.js",
+    "components/navbar/Menu.jsx",
+    "components/navbar/Content.js",
+    "components/navbar/AuraLogo.js",
+    "components/navbar/Box.js",
+    "components/navbar/Icon.js"
+, "pages/api/generate-signature-mint.js", "components/Dropdown.js"  ],
   "exclude": [
     "node_modules"
   ]

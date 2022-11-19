@@ -8,7 +8,7 @@ import {
 } from "@thirdweb-dev/react";
 import { useRouter } from "next/router";
 
-const List: NextPage = () => {
+const Home: NextPage = () => {
   const router = useRouter();
 
   // Connect your marketplace smart contract here (replace this address)
@@ -74,4 +74,4 @@ const List: NextPage = () => {
   );
 };
 
-export default List;
+export default Home;

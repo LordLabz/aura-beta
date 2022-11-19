@@ -25,7 +25,8 @@ select {
 }
 
 :root {
-  --black: #1c1e21;
+  --black: #14141f;
+  --background-image: url("https://kroniclabz.mypinata.cloud/ipfs/QmP3RNjcMYaU9QNNFeQHPQXBdsBkrdPgNXDp7G3edgxur7");
   --white: #ffffff;
   --tw-color1: #a855f7;
   --tw-color1-hover: #9333ea;
@@ -33,6 +34,7 @@ select {
 
 body {
   background: var(--black);
+  background-image: var(--background-image);
   font-family: "Inter", sans-serif;
   color: var(--white);
   display: flex;

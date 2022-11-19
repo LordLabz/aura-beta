@@ -10,12 +10,14 @@ import { BigNumber, ethers } from "ethers";
 import type { NextPage } from "next";
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
+import { useRouter } from "next/router";
 
 const nftDropContractAddress = "0x324fFa106faafeaD99165Cda1490Be403923E4Cf";
 const tokenContractAddress = "0x228e7f2649ce8DEC0917a4d425f49B6771FB0074";
 const stakingContractAddress = "0xd2504B03dc3dafdF938AAeA364647Ed2372C13aC";
 
 const ZOEStaking: NextPage = () => {
+  const router = useRouter();
   // Wallet Connection Hooks
   const address = useAddress();
   const connectWithMetamask = useMetamask();
